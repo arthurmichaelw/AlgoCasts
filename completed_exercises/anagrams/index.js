@@ -15,6 +15,10 @@ function anagrams(stringA, stringB) {
 function cleanString(str) {
   return str
     .replace(/[^\w]/g, '')
+    // the [] sorts through the whole sentance (array)
+    // the ^ indicates the special characters including spaces
+    // /\w matches word characters 
+    // /g makes it a global replacement
     .toLowerCase()
     .split('')
     .sort()
